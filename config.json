@@ -8,6 +8,6 @@
     "photo-download": "copy",
     "video-download": "resize",
     "sort-albums-by": "start-date",
-    "albums-from": ["Years/{YYYY}", "uploads/"],
+    "albums-from": ["Years/{YYYY}", ""],
     "theme": "cards"
   }
