@@ -9,7 +9,5 @@
     "video-download": "resize",
     "sort-albums-by": "start-date",
     "albums-from": ["Years/{YYYY}", "uploads/"],
-    "theme": "cards",
-    "css": "./custom.css",
-    "google-analytics": "UA-999999-9"
+    "theme": "cards"
   }
