@@ -7,7 +7,7 @@
     "large-size": 1500,
     "photo-download": "copy",
     "video-download": "resize",
-    "sort-albums-by": "date",
+    "sort-albums-by": "start-date",
     "theme": "cards",
     "css": "./custom.css",
     "google-analytics": "UA-999999-9"
