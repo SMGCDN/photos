@@ -1,6 +1,6 @@
 {
     "input": "/uploads",
-    "output": "./dist",
+    "output": "./",
     "title": "SMGoro Photo",
     "footer": "All images uploads by <a href=\"https://5l.re\">SummerGoro</a> 2023",
     "thumb-size": 200,
@@ -8,6 +8,5 @@
     "photo-download": "copy",
     "video-download": "resize",
     "sort-albums-by": "start-date",
-    "albums-from": ["Years/{YYYY}", ""],
     "theme": "cards"
   }
