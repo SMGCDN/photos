@@ -8,5 +8,5 @@
     "photo-download": "copy",
     "video-download": "resize",
     "sort-albums-by": "start-date",
-    "theme": "cards"
+    "theme": "flow"
   }
