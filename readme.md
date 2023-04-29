@@ -15,3 +15,43 @@
 ```
 npm install -g thumbsup && thumbsup --config config.json
 ```
+
+# 图床地址
+
+## GithubRaw（国内速度慢，刷新速度快，不推荐使用）
+
+```
+https://raw.githubusercontent.com/smgcdn/photos/master/
+```
+
+example:
+
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/uploads/20230428180548.png)
+
+## jsdelivr（速度海星，缓存刷新慢）
+
+```
+# 刷新链接
+https://purge.jsdelivr.net/gh/SMGCDN/photos/
+# 请求链接
+https://cdn.jsdelivr.net/gh/SMGCDN/photos/
+```
+
+example:
+
+![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/uploads/20230428180548.png)
+
+## Cloudflare（速度一般，刷新速度慢）
+
+```
+# Pages
+https://smgimg.pages.dev/
+# IMC.RE
+https://img.imc.re/
+```
+
+example:
+
+![CF_Pages](https://smgimg.pages.dev/uploads/20230428180548.png)
+
+![CF_IMC](https://img.imc.re/uploads/20230428180548.png)
