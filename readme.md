@@ -23,6 +23,9 @@ npm install -g thumbsup && thumbsup --config config.json
 
 ```
 https://raw.githubusercontent.com/smgcdn/photos/master/
+
+# example:
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/uploads/20230428180548.png)
 ```
 
 example:
@@ -36,6 +39,10 @@ example:
 https://smgimg.pages.dev/
 # IMC.RE
 https://img.imc.re/
+
+# example:
+![CF_Pages](https://smgimg.pages.dev/uploads/20230428180548.png)
+![CF_IMC](https://img.imc.re/uploads/20230428180548.png)
 ```
 
 example:
@@ -51,6 +58,9 @@ example:
 https://purge.jsdelivr.net/gh/SMGCDN/photos/
 # 请求链接
 https://cdn.jsdelivr.net/gh/SMGCDN/photos/
+
+# example:
+![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/uploads/20230428180548.png)
 ```
 
 example:
