@@ -19,7 +19,7 @@ npm install -g thumbsup && thumbsup --config config.json
 
 # 图床地址
 
-## GithubRaw（国内速度慢，刷新速度快，不推荐使用）
+## GithubRaw（国内速度慢，刷新速度快）
 
 ```
 https://raw.githubusercontent.com/smgcdn/photos/master/
