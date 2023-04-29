@@ -25,12 +25,12 @@ npm install -g thumbsup && thumbsup --config config.json
 https://raw.githubusercontent.com/smgcdn/photos/master/
 
 # example:
-![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/uploads/20230428180548.png)
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
 ```
 
 example:
 
-![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/uploads/20230428180548.png)
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
 
 ## Cloudflare（速度一般，刷新速度慢）
 
@@ -41,15 +41,15 @@ https://smgimg.pages.dev/
 https://img.imc.re/
 
 # example:
-![CF_Pages](https://smgimg.pages.dev/uploads/20230428180548.png)
-![CF_IMC](https://img.imc.re/uploads/20230428180548.png)
+![CF_Pages](https://smgimg.pages.dev/logo/imc.re.png)
+![CF_IMC](https://img.imc.re/logo/imc.re.png)
 ```
 
 example:
 
-![CF_Pages](https://smgimg.pages.dev/uploads/20230428180548.png)
+![CF_Pages](https://smgimg.pages.dev/logo/imc.re.png)
 
-![CF_IMC](https://img.imc.re/uploads/20230428180548.png)
+![CF_IMC](https://img.imc.re/logo/imc.re.png)
 
 ## jsdelivr（速度海星，缓存刷新慢）
 
@@ -60,9 +60,9 @@ https://purge.jsdelivr.net/gh/SMGCDN/photos/
 https://cdn.jsdelivr.net/gh/SMGCDN/photos/
 
 # example:
-![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/uploads/20230428180548.png)
+![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/logo/imc.re.png)
 ```
 
 example:
 
-![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/uploads/20230428180548.png)
+![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/logo/imc.re.png)
