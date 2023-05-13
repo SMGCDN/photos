@@ -8,6 +8,7 @@
 
 使用项目概览: 
 - [PicGo](https://github.com/Molunerfinn/PicGo/)： 客户端上传程序
+- [flutter-picgo](https://github.com/PicGo/flutter-picgo)：手机客户端上传程序
 - [Github](https://github.com/)：图片仓库存储
 - [Gitee](https://gitee.com)：国内仓库镜像存储
 - [Thumbsup](https://github.com/thumbsup/thumbsup)：静态相册网站程序
