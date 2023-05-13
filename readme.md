@@ -22,18 +22,31 @@ npm install -g thumbsup && thumbsup --config config.json
 
 # 图床地址
 
-## GithubRaw（国内速度慢，刷新速度快）
+## Cloudflare（速度一般，刷新速度慢）
+
+托管在Cloudflare Pages上的图片有经过Thumbsup相册的处理，可以实现略缩图，原图，水印图的处理，总的来说，十分牛逼，就是每次都要从头构建导致刷新速度有点慢x
 
 ```
-https://raw.githubusercontent.com/smgcdn/photos/master/
+# Pages
+https://smgimg.pages.dev/
+# IMC.RE
+https://img.imc.re/
+# 略缩图
+https://img.imc.re/media/small/
+# 处理图
+https://img.imc.re/media/large/
 
-# example:
-![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
+example:
+![CF_IMC](https://img.imc.re/logo/imc.re.png)
+![CF_small](https://img.imc.re/media/small/wallpaper/bg.jpg)
+![CF_large](https://img.imc.re/media/large/wallpaper/bg.jpg)
 ```
 
 example:
 
-![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
+![CF_IMC](https://img.imc.re/logo/imc.re.png)
+![CF_small](https://img.imc.re/media/small/wallpaper/bg.jpg)
+![CF_large](https://img.imc.re/media/large/wallpaper/bg.jpg)
 
 -------
 
@@ -47,27 +60,6 @@ https://gitee.com/smgoro_0/photos/raw/master/
 example:
 
 ![Gitee](https://gitee.com/smgoro_0/photos/raw/master/logo/imc.re.png)
-
--------
-
-## Cloudflare（速度一般，刷新速度慢）
-
-```
-# Pages
-https://smgimg.pages.dev/
-# IMC.RE
-https://img.imc.re/
-
-# example:
-![CF_Pages](https://smgimg.pages.dev/logo/imc.re.png)
-![CF_IMC](https://img.imc.re/logo/imc.re.png)
-```
-
-example:
-
-![CF_Pages](https://smgimg.pages.dev/logo/imc.re.png)
-
-![CF_IMC](https://img.imc.re/logo/imc.re.png)
 
 -------
 
@@ -87,3 +79,18 @@ https://gcore.jsdelivr.net/gh/SMGCDN/photos/
 example:
 
 ![jsdelivr](https://cdn.jsdelivr.net/gh/SMGCDN/photos/logo/imc.re.png)
+
+-------
+
+## GithubRaw（国内速度慢，刷新速度快）
+
+```
+https://raw.githubusercontent.com/smgcdn/photos/master/
+
+# example:
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
+```
+
+example:
+
+![GithubRaw](https://raw.githubusercontent.com/smgcdn/photos/master/logo/imc.re.png)
