@@ -1,0 +1,43 @@
+name: Deploy To Github Pages
+
+on:
+  watch:
+    types: [started]
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    if: github.repository == 'SMGCDN/photos'
+    name: Deploy thumbsup Public
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+    - name: Checkout Repository main branch
+      uses: actions/checkout@main
+      with:
+        submodules: "true"
+    - name: Setup Node.js 14.x
+      uses: actions/setup-node@master
+      with:
+        node-version: "14.x"
+    - name: Install thumbsup
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm install -g thumbsup
+    - name: Generate Public Files
+      run: |
+        # Restore last modified time
+        git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
+        bash build.sh
+
+    - name: Deploy Github
+      uses: peaceiris/actions-public@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        force_orphan: true
