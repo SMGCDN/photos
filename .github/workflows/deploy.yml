@@ -25,6 +25,8 @@ jobs:
       uses: actions/setup-node@master
       with:
         node-version: "14.x"
+    - name: apt update
+      run: sudo apt-get update && apt-get updgrade
     - name: Install ffmpeg
       run: sudo apt-get install ffmpeg -y --fix-missing
     - name: Install gifsicle
