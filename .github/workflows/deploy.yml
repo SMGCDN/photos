@@ -27,18 +27,12 @@ jobs:
         node-version: "14.x"
     - name: apt update
       run: sudo apt-get update
-    - name: Install ffmpeg
-      run: sudo apt-get install ffmpeg -y --fix-missing
-    - name: Install gifsicle
-      run: sudo apt-get install gifsicle -y
-    - name: Install dcraw
-      run: sudo apt-get install dcraw -y
 
     - name: Install env
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install -g thumbsup
-        # sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing
+        sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing
     - name: Generate Public Files
       run: |
         # Restore last modified time
