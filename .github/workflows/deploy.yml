@@ -31,8 +31,8 @@ jobs:
     - name: Install env
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
-        npm install -g thumbsup
-        sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing
+        # sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing
+        # npm install -g thumbsup
     - name: Generate Public Files
       run: |
         # Restore last modified time
@@ -43,7 +43,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         force_orphan: true
