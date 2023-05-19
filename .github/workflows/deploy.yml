@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: "14.x"
     - name: Install ffmpeg
-      uses: krrishnarraj/setup-ffmpeg@v1.2.0
+      run: sudo apt-get install ffmpeg -y
     - name: Install gifsicle
       run: sudo apt-get install gifsicle -y
     - name: Install dcraw
