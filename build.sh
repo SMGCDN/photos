@@ -1,5 +1,7 @@
 # 构建脚本，如果觉得构建慢可以直接注释掉）
 
+# 执行指令： bash build.sh
+
 # 安装前置环境
 apt-get update
 apt-get install -y zip ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing
