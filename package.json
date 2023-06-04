@@ -6,7 +6,8 @@
     "thumbsup": "^4.0.0"
   },
   "scripts": {
-    "build": "sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing && thumbsup --config config.json"
+    "install": "npm install ffmpeg dcraw exiftool gm --fix-missing",
+    "build": "thumbsup --config config.json"
   },
   "author": "",
   "license": "ISC"

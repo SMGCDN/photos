@@ -9,6 +9,7 @@
       "thumbsup": "^4.0.0"
     },
     "env": {
+      "FFMPEG_VERSION": "4.3.1",
       "FFMPEG_PATH": "/usr/bin/ffmpeg",
       "GIFSICLE_PATH": "/usr/bin/gifsicle",
       "DCRAW_PATH": "/usr/bin/dcraw",
@@ -28,7 +29,8 @@
       }
     ],
     "scripts": {
-      "build": "sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing && thumbsup --config config.json"
+      "install": "npm install @ffmpeg-installer/ffmpeg @ffprobe-installer/ffprobe gifsicle dcraw exiftool gm thumbsup",
+      "build": "thumbsup --config config.json"
     }
   }
   

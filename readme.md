@@ -22,7 +22,7 @@ npm install -g thumbsup && thumbsup --config config.json
 
 # 图床地址
 
-## Cloudflare（速度一般，刷新速度慢）
+## Cloudflare（速度一般，比较稳）
 
 托管在Cloudflare Pages上的图片有经过Thumbsup相册的处理，可以实现略缩图，原图，水印图的处理，总的来说，十分牛逼，就是每次都要从头构建导致刷新速度有点慢x
 
@@ -49,6 +49,19 @@ example:
 ![CF_large](https://img.imc.re/media/large/wallpaper/bg.jpg)
 
 -------
+
+## Vercel（速度海星，可能不稳）
+
+```
+https://imcphotos.vercel.app/
+
+# example:
+![GithubRaw](https://imcphotos.vercel.app/master/logo/imc.re.png)
+```
+
+example:
+
+![vercel](https://imcphotos.vercel.app/master/logo/imc.re.png)
 
 ## Gitee（国内速度快，Action同步）
 ```
