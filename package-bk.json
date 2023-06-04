@@ -1,0 +1,31 @@
+{
+  "name": "smg-photos",
+  "version": "1.0.0",
+  "description": "SMGCDN Photos",
+  "dependencies": {
+    "dcraw": "^1.0.3",
+    "exiftool": "0.0.3",
+    "ffmpeg": "0.0.4",
+    "gifsicle": "^7.0.1",
+    "gm": "^1.25.0",
+    "magick": "0.0.1",
+    "thumbsup": "^2.17.1",
+    "zip": "^1.2.0"
+  },
+  "scripts": {
+    "install": "npm install ffmpeg dcraw exiftool gm thumbsup",
+    "build": "thumbsup --config config.json"
+  },
+  "author": "SummerGoro",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMGCDN/photos.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SMGCDN/photos/issues"
+  },
+  "homepage": "https://github.com/SMGCDN/photos#readme"
+}

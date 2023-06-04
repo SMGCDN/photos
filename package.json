@@ -1,14 +1,28 @@
 {
-  "name": "smg-photos",
+  "name": "photos",
   "version": "1.0.0",
-  "description": "SMGCDN Photos",
-  "dependencies": {
-    "thumbsup": "^4.0.0"
-  },
+  "description": "采用 PicGo客户端 + Github + Cloudflare Pages+ thumbsup 的方案实现完全脱离自托管服务器的自建静态渲染图床网站.",
+  "main": "index.js",
   "scripts": {
-    "install": "npm install ffmpeg dcraw exiftool gm thumbsup",
     "build": "thumbsup --config config.json"
   },
-  "author": "SummerGoro",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMGCDN/photos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SMGCDN/photos/issues"
+  },
+  "homepage": "https://github.com/SMGCDN/photos#readme",
+  "dependencies": {
+    "dcraw": "^1.0.3",
+    "ffmpeg": "0.0.4",
+    "gifsicle": "^7.0.1",
+    "exiftool": "0.0.3",
+    "gm": "^1.25.0",
+    "thumbsup": "^2.17.1"
+  }
 }
