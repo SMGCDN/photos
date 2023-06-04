@@ -6,9 +6,9 @@
     "thumbsup": "^4.0.0"
   },
   "scripts": {
-    "install": "npm install ffmpeg dcraw exiftool gm --fix-missing",
+    "install": "npm install ffmpeg dcraw exiftool gm thumbsup",
     "build": "thumbsup --config config.json"
   },
-  "author": "",
+  "author": "SummerGoro",
   "license": "ISC"
 }
