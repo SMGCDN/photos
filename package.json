@@ -1,0 +1,13 @@
+{
+  "name": "smg-photos",
+  "version": "1.0.0",
+  "description": "SMGCDN Photos",
+  "dependencies": {
+    "thumbsup": "^4.0.0"
+  },
+  "scripts": {
+    "build": "sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing && thumbsup --config config.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

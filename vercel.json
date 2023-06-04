@@ -1,0 +1,34 @@
+{
+    "builds": [
+      {
+        "src": ".",
+        "use": "@vercel/node"
+      }
+    ],
+    "dependencies": {
+      "thumbsup": "^4.0.0"
+    },
+    "env": {
+      "FFMPEG_PATH": "/usr/bin/ffmpeg",
+      "GIFSICLE_PATH": "/usr/bin/gifsicle",
+      "DCRAW_PATH": "/usr/bin/dcraw",
+      "EXIFTOOL_PATH": "/usr/bin/exiftool",
+      "GM_PATH": "/usr/bin/gm"
+    },
+    "functions": {
+      "api": {
+        "memory": 128,
+        "runtime": "@vercel/node"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "scripts": {
+      "build": "sudo apt-get install -y ffmpeg gifsicle dcraw exiftool graphicsmagick-imagemagick-compat --fix-missing && thumbsup --config config.json"
+    }
+  }
+  
