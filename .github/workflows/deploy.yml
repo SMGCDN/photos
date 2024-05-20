@@ -3,11 +3,13 @@ name: Deploy To Github Pages
 on:
   watch:
     types: [started]
+
+  # 每次提交push执行
   push:
     branches:
-    - main
-  schedule:
-    - cron: "0 */1 * * *"
+    - master
+  # schedule:
+  #   - cron: "0 */1 * * *"
   workflow_dispatch:
 jobs:
   deploy:
