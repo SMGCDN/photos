@@ -1,0 +1,10 @@
+{
+    "input": "./",
+    "output": "./",
+    "watermark": "./logo/imc.re_x64.png",
+    "watermark-position": "NorthWest",
+    "title": "SMGoro Photo",
+    "footer": "All images uploads by <a href=\"https://imc.re\">IMC.RE</a> 2023",
+    "sort-albums-by": "start-date",
+    "theme": "flow"
+  }
