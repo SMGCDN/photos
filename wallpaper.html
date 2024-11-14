@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>SMGoro Photo - wallpaper</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
+  </head>
+
+  <body>
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">SMGoro Photo</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="wallpaper.html">wallpaper</a>
+      </nav>
+    
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums" class="justified-gallery">
+            <a href="wallpaper-ACG.html">
+              <img src="media/small/wallpaper/ACG/69250814_p0.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>ACG</h3>
+                <div class="summary">4 photos</div>
+              </div>
+            </a>
+            <a href="wallpaper-MC.html">
+              <img src="media/small/wallpaper/MC/slime.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>MC</h3>
+                <div class="summary">2 photos</div>
+              </div>
+            </a>
+            <a href="wallpaper-ACU.html">
+              <img src="media/small/wallpaper/ACU/ACU_Notre-Dame_Guillotine_1024x768.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>ACU</h3>
+                <div class="summary">18 photos</div>
+              </div>
+            </a>
+            <a href="wallpaper-R6S.html">
+              <img src="media/small/wallpaper/R6S/R6S_Wallpaper-01_1920x1080.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>R6S</h3>
+                <div class="summary">5 photos</div>
+              </div>
+            </a>
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/wallpaper/imcrelogo.png"data-src="media/large/wallpaper/imcrelogo.png"data-exthumbimage="media/thumbs/wallpaper/imcrelogo.png"data-filename="imcrelogo.png"><a href="media/large/wallpaper/imcrelogo.png"><img
+                      src="media/small/wallpaper/imcrelogo.png"
+                      width="533.3333333333333"
+                      height="300"alt="imcrelogo.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/wallpaper/bg.jpg"data-src="media/large/wallpaper/bg.jpg"data-exthumbimage="media/thumbs/wallpaper/bg.jpg"data-filename="bg.jpg"><a href="media/large/wallpaper/bg.jpg"><img
+                      src="media/small/wallpaper/bg.jpg"
+                      width="600.6006006006006"
+                      height="300"alt="bg.jpg"/>
+              </a>
+          
+          </div>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>All images uploads by <a href="https://imc.re">IMC.RE</a> 2023</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
+        });
+      });
+    </script>
+
+
+
+  </body>
+
+</html>
